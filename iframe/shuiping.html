@@ -1,0 +1,185 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/little.css">
+    <style>
+        body {
+            overflow-x: hidden;
+            overscroll-behavior: contain;
+            background-color: #2b5466;
+        }
+
+        .sp {
+            width: 75%;
+            margin: 50px auto;
+            height:500px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <div class="sp">
+        <div class="shuiping">
+            <div class="content">
+                <img id="time" src="../img/timeline.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+</body>
+
+</html>
+<script src="js/horwheel.min.js"></script>
+<script>
+    const horwheel = require('horwheel');
+    const view = document.querySelector('.shuiping');
+    document.getElementById('time').addEventListener('mouseover', function () {
+        horwheel(view);
+    });
+
+</script>
+-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img-content {
+            width: 70%;
+            overflow-x: auto;
+            height: 500px;
+        }
+
+        img {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <div id="img-content">
+        <img src="../img/timeline.jpg" alt="">
+
+    </div>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+    <h1>政策时间线</h1>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>View Long Image in a Container</title>
+    <style>
+        body {
+            background: #2b5466;
+        }
+
+        .image-container {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .image-container img {
+            width: 4000px;
+            height: auto;
+        }
+
+        .nav-buttons {
+            width: 10%;
+            margin-top: 20px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .cunmao_imgdiv {
+            width: 70%;
+            height: 450px;
+            margin-left:200px ;
+            margin-right:200px ;
+        }
+
+        #cunmao_img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="../img/time-line.jpg" alt="Long Image">
+    </div>
+
+    <div class="nav-buttons">
+        <div class="timelinediv">
+            <img class="prev" src="../img/btn-prev.png">
+        </div>
+        <div style="width: 1000px;">&nbsp;</div>
+        <div class="timelinediv">
+            <img class="next" src="../img/btn-next.png">
+        </div>
+
+    </div>
+
+
+    <script>
+        var imgcontainer = document.querySelector('.image-container');
+        var image = document.querySelector('.image-container img');
+        var prevButton = document.querySelector('.prev');
+        var nextButton = document.querySelector('.next');
+
+        var scrollAmount = 0;
+        var scrollStep = 500;
+
+        prevButton.addEventListener('click', function () {
+            scrollAmount -= scrollStep;
+            imgcontainer.scrollTo({
+                top: 0,
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        nextButton.addEventListener('click', function () {
+            scrollAmount += scrollStep;
+            imgcontainer.scrollTo({
+                top: 0,
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

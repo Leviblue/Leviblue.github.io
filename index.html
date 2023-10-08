@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慢性病</title>
+    <script src="https://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"></script>
+    <script src="https://wow.techbrood.com/libs/jquery/jquery.smoove.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'>
+    <link rel='stylesheet' href='css&js/index.css'>
+    <link rel="stylesheet" type="text/css" href="css&js/page.css">
+    <link rel="stylesheet" type="text/css" href='css&js/all.min.css'>
+</head>
+
+<body>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="chronic diseases.html">01 沉默的全民杀手</a>
+        <a class="menu1" href="#page2">02 小病拖，大病扛 </a>
+        <a class="menu2" href="#page3">03 “讳疾忌医”心理背后的就医负担</a>
+        <a class="menu3" href="#page4">04 跨越信息门槛</a>
+        <a class="menu4" href="#page5">05 一直在路上</a>
+    </div>
+    <span style="cursor:pointer" onclick="openNav()">
+        <img id="bingli" src="img/bingli.png">
+    </span>
+
+
+
+    <div class="container">
+        <!-- 大标题 -->
+        <div class="section section1"></div>
+
+        <!-- 前言 -->
+        <div class="section section2 ">
+
+            <div class="article title-article">
+                <!-- <div class="chatu1">
+                    <img class="chatu1 fuxian" src="img/titleimg.png">
+                </div> -->
+                <div class=" wenzi fuxian">
+                    <p>在床上翻来覆去了一整晚，听了大半夜的鸡鸣，赵英梅最终还是无法入睡。她把自己撑着坐起来，随手从老式的柜子抽屉中拾起一瓶药，瓶身晃动，发出“叮叮哐哐”的响声。<span
+                            style="color: #F1962E;">她熟练地拧开瓶盖，倒出两颗药，晃了下神，又谨慎地倒回去一颗，然后继续在屉子里翻找，直到找全4种药品</span>。
+                    <p>今年是赵英梅检查出高血压的<span style="color: #F1962E;">第13年</span>，查出胆结石的<span
+                            style="color: #F1962E;">第2年</span>。也是与慢性病苦苦纠缠，与各种大大小小的药丸无法分离的第13年。
+                    <p> “感觉好点的时候我就每次少喝两颗，发病了我就再加回来，能省一点是一点，药贵。”
+                    <p class="fuxian">
+                        而在这个村子里，和赵英梅一样，饱受慢性病困扰，甚至与其搏斗几十年的，大有人在。
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="section section3" id="single">
+        </div>
+
+        <div class="section section4">
+            <br>
+            <br>
+            <div class="article">
+                <p class="fuxian">
+                    前程村，位于湖北省宜昌市当阳市河溶镇。<span
+                        style="color: #F1962E;">S107省道穿村而过</span>，成为村中老少出行的必经之路。远处的香樟树林和近处连片的稻田，构成了村子的主要风景。这里的人们大多以务农为生。村民的经济来源以<span
+                        style="color: #F1962E;">传统农业和苗木种植</span>为主，<span
+                        style="color: #F1962E;">年轻人和仍有工作能力的中年人大多选择外出打工</span>。
+                </p>
+                <br>
+                <br>
+                <h5 class="zhushi">左右点击查看前程村村貌 ↓</h5>
+                <div id="cunmao">
+                    <img class="cunmaobtn" src="img/btn-prev.png" onclick="chgImgLeft()">
+                    <div class="cunmao_imgdiv">
+                        <img id="cunmao_img" src="img/1.jpg" width="400">
+                    </div>
+                    <img class="cunmaobtn" src="img/btn-next.png" onclick="chgImgRight()">
+                </div>
+            </div>
+        </div>
+
+        <div class="section section5">
+            <br>
+            <br>
+            <div class="article part1-article1" style="display: flex;justify-content: center;align-items: center;">
+                <p class="fuxian" style="width: 50%;padding-right: 20px;">
+                    据统计，全村人口共<span class="data">3008人</span>、<span class="data">975户</span>，其中低保户<span
+                        class="data">41户</span>。村里患有高血压和糖尿病（这是该村有明确记录并存档的两种慢性病）的村民共有<span
+                        class="data">464人</span>，约占全村人口的<span class="data">16%</span>，其中高血压<span
+                        class="data">326人</span>，糖尿病<span class="data">138人</span>。
+                </p>
+                <iframe src="https://dycharts.com/xshow/index.html?id=c_e4c39c447ffe46427d06a4524e6d5acf" width="400"
+                    height="400" scrolling="no" frameborder="0" align="" style="display: block;"></iframe>
+            </div>
+        </div>
+
+
+        <div class="section section6" id="shuben">
+            <div class="htmleaf-container">
+                <div class='pages'>
+                    <input id='one' name='trigger' type='radio'>
+                    <input id='two' name='trigger' type='radio'>
+                    <input id='three' name='trigger' type='radio'>
+                    <input id='four' name='trigger' type='radio'>
+
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <!-- <div class='logo'>慢性病</div> -->
+                            <div class='pagenumber'>1 2</div>
+                            <div class='content'>
+
+                                <div class="shuiyin">
+                                    <img src="img/shuiyin.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第一页左半部分 -->
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <div class='content '>
+                                <!-- <div class='overlay'></div> -->
+                                <!-- 蒙版 -->
+                                <div class=" book-article">
+                                    <p>慢性病指的是，<span class="num"
+                                            style="font-size:20px;">不构成传染、具有长期积累形成疾病形态损害</span>的疾病的总称。常见的慢性病有高血压、糖尿病、类风湿、冠心病等，这些都是威胁我国居民生命健康，影响居民生活质量的主要疾病。
+                                    </p>
+                                    <p style="font-size: 15px;color: #AF5F3C;text-align: right;">翻页查看详情 →</p>
+                                    <iframe
+                                        src="https://dycharts.com/xshow/index.html?id=c_4b94708e5a83a64c57dc4992d6a930cd"
+                                        width="400" height="400" scrolling="no" frameborder="0" align=""></iframe>
+                                </div>
+                            </div>
+                            <div class='control next'>
+                                <label for='two'></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第一页右半部分 -->
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <!-- <div class='logo'>慢性病</div> -->
+                            <div class='pagenumber'>3 4</div>
+                            <div class='control'>
+                                <label for='one'></label>
+                            </div>
+                            <div class='content'>
+                                <div class=" book-article" style="margin-top: 200px;">
+                                    <p>全国18岁以上居民中，高血压患病率为<span
+                                            class="num">27.5%</span>，每10个成年人中就有约3个高血压患者；而糖尿病的患病率也高达<span
+                                            class="num">11.9%</span>。
+                                    </p>
+                                    <br>
+                                    <br><br>
+                                    <br>
+                                    <p>过去二三十年，中国慢性病患病率呈现<span class="num"
+                                            style="font-size:20px;">先降后升</span>的趋势，截至目前，慢性病依然是影响我国居民健康的重要威胁。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二页左半部分 -->
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <div class='control next'>
+                                <label for='three'></label>
+                            </div>
+                            <div class='content'>
+                                <div class="tubiao">
+                                    <iframe
+                                        src="https://dycharts.com/xshow/index.html?id=c_39a9319f5d733d07b36b45438867725d"
+                                        width="550" height="300" scrolling="no" frameborder="0" align=""></iframe>
+                                    <iframe
+                                        src="https://dycharts.com/xshow/index.html?id=c_c9d725e45221d764fc2076fdeb3a8adf"
+                                        width="550" height="300" scrolling="no" frameborder="0" align=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二页右半部分 -->
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <!-- <div class='logo'>慢性病</div> -->
+                            <div class='pagenumber'>5 6</div>
+                            <div class='content'>
+                                <div class=" book-article" style="margin-top: 150px;">
+                                    <p>更糟糕的是，慢性病的来袭并非单枪匹马，而是往往结伴甚至成群而至。中老年人患病的调查发现，同时患2种及以上慢性病的中老年人比患1种慢性病的多<span
+                                            class="num">32.15%</span>。</p>
+                                    <br>
+                                    <br><br>
+                                    <br>
+                                    <p>发生率在<span class="num" style="font-size:20px;">前3位的慢性病共病组合</span>分别为胃病 +
+                                        关节炎或风湿病、高血压 + 关节炎或风湿病
+                                        和高血压 + 血脂异常。<span class="num"
+                                            style="font-size:20px;">同时患3种慢性病</span>排名第1位的组合为高血压 + 胃病 + 关节炎或风湿病。</p>
+                                </div>
+                            </div>
+                            <div class='control'>
+                                <label for='two'></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第三页左半部分 -->
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <div class='control next'>
+                                <label for='four'></label>
+                            </div>
+                            <div class='content'>
+                                <div class="tubiao">
+                                    <iframe
+                                        src="https://dycharts.com/xshow/index.html?id=c_1e05351f1c418a479170af2650dc9a07"
+                                        width="500" height="300" scrolling="no" frameborder="0" align=""></iframe>
+                                    <iframe
+                                        src="https://dycharts.com/xshow/index.html?id=c_f2fe9be548c59eb96a07502281b6dbaf"
+                                        width="607" height="300" scrolling="no" frameborder="0" align=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第三页右半部分 -->
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <!-- <div class='logo'>慢性病</div> -->
+                            <div class='pagenumber'>7 8</div>
+                            <div class='content'>
+                                <div class=" book-article book-article4">
+                                    <p>慢性病所带来的，不仅是长此以往的痛苦，还有步步紧逼的死亡的威胁。<br><br><br>
+                                        <br>
+                                    <p>2019年，我国居民因心脑血管疾病、癌症、慢性呼吸系统疾病和糖尿病等四类重大慢性病导致的过早死亡率为<span
+                                            class="num">16.5%</span>，因慢性病导致的死亡占总死亡的<span
+                                            class="num">88.5%</span>，其中心脑血管病、癌症、慢性呼吸系统疾病死亡比例为<span
+                                            class="num">80.7%。</span></p>
+                                </div>
+                            </div>
+                            <div class='control'>
+                                <label for='three'></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第四页左半部分 -->
+                    <div class='pages_page'>
+                        <div class='pages_page__inner'>
+                            <div class='content'>
+                                <div class="tubiao">
+                                    <iframe
+                                        src="https://dycharts.com/xshow/index.html?id=c_ed83cec068620793b70917923610db03"
+                                        width="600" height="600" scrolling="no" frameborder="0" align=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第四页右半部分 -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="article guodu">
+        <p class="data">即使在慢性病阴影的笼罩下，赵英梅还是抱着一丝执拗的侥幸。</p>
+        <br>
+        <br>
+
+    </div>
+    <br>
+    <br>
+
+    <div id="page2"></div>
+    <div class="zhengwen">
+        <p>2010年新年刚过，赵英梅收完上一季种的白菜，正在田里翻土犁地，几锄头刚下去没多久，便觉得一阵头晕，天旋地转，接着一股热流涌入鼻腔。又是鼻血。</p>
+        <p>这已经不是赵英梅这段时间第一次流鼻血了，前一天吃晚饭时，她刚解下围裙坐下，几滴鼻血就顺着鼻腔滴落在衣服上、地上。她愣了一秒，急忙起身想拿纸去擦，却因为头晕，一个踉跄跌坐回板凳上。</p>
+        <p>头晕是常事，流鼻血也没什么稀奇的，或许是这段时间上火了，或者是年纪大了干活身体吃不消，<span style="color: #F1962E;">总之挨一挨就过去了</span>，农村人，哪有那么娇气。
+
+        <p>直到头晕的症状越来越严重，甚至走一小段路都会心悸、浑身冒冷汗，流鼻血的次数也越来越频繁，赵英梅意识到不大对劲，这才搭上了前往当阳市市区的班车。
+        <p>一检查，果不其然，血压已经达到190了。
+
+    </div>
+    <p class="data" style="text-align: center;">“医生说让我吃药，我说我不吃，吃了就停不了了。”
+    <div class="zhengwen">
+        <p>赵英梅犟着回了家，但拗不过病痛的折磨，在家休养几天不见症状好转后，她还是跑到镇上的药店买了一些降压药。</p>
+    </div>
+    <div class="chatu">
+        <div class="part2chatu">
+            <img src="img/medicine.png" alt="">
+        </div>
+        <div>
+            <p class="data">“我在街上买的13块一瓶，
+            <p class="data">&nbsp;&nbsp;&nbsp;&nbsp;医院的47元才2瓶。”</p>
+        </div>
+    </div>
+    <div class="zhengwen">
+        <p>“他不体检啊，什么病都不看，通知了也不去检查。”村民成建伟的妻子向记者无奈地抱怨。
+        <p>“检查了起什么作用咯，检查出了病起什么作用咯？”男人换下刚干完活满身汗渍的T恤，回头应了两句。
+
+        <p>成建伟，1960年生人。常年的吸烟喝酒让他落下了一身毛病。
+
+        <p>这几年，成建伟总是咳嗽，“应该是得了支气管炎”，当然，也没有去检查过，他按着支气管炎<span style="color: #F1962E;">自行买了药</span>。
+
+        <p>“应该有点用吧，不清楚他的。”
+        <p>最近这段时间，成建伟的肠胃似乎也出了问题，总是会突然绞痛，<span style="color: #F1962E;">实在痛得难受的时候，他就跑到卧室的床上蜷着，过一阵就好了</span>。
+
+        <p class="data" style="text-align: center;">“农村人，不到那个顶点，谁会去医院啊。”
+            <br>
+            <Br>
+        <p>在这个村子里，这样的“赵英梅”和“成建伟”还有很多，懒得看，不愿看，不敢看。去一趟村卫生院不到十分钟，到县医院也就一个小时的车程，对于他们来说，却似乎成了难于登天的事情。<span
+                style="color: #F1962E;">“受得住”“没必要”</span>，成了他们安慰自己、逃避诊断的借口；<span
+                style="color: #F1962E;">“小病拖，大病扛”</span>成了他们面对疾病的固定思维，直到拖无可拖、忍无可忍，他们才拖着已经被疾病折磨得苦痛不堪的躯体前往医院。
+    </div>
+
+
+
+
+    <div id="page3"></div>
+    <div class="zhengwen">
+        <div>
+            <div>
+                <p>自我安慰、拖延就诊，说到底，还是因为<span style="color: #F1962E;">不敢面对高昂的医药费</span>。
+                <p>村里但凡有劳动力和技术的年轻人都外出打工了，留下的大多是60岁以上的老人，70岁以上的更是不在少数。
+                <div>
+                    <iframe src="https://dycharts.com/xshow/index.html?id=c_a89fad8d5bf1c377c7929e23507ee4cc"
+                        width="500" height="500" scrolling="no" frameborder="0" align=""
+                        style="display: block;margin: 10px auto;"></iframe>
+                </div>
+                <p>身体好的还能下地干活，卖点粮食挣钱；身体差的，能管好院子里的三分地，种点蔬菜日常食用，就很不错了。
+            </div>
+        </div>
+        <p>对于赵英梅一家来说，连年的高温加上生病疏于照料，田里的庄稼已经5年没什么收成了，今年家里的收入恐怕只有几只下蛋的母鸡和国家发给两位老人的60岁以上一年两千多块钱的养老补贴了。
+        <p>往年赵英梅的医药费都是姑娘给的，但是今年她拒绝了。她说，孩子们都有自己的家，负担也重，<span style="color: #F1962E;">“我少吃两颗药不要紧。”</span>
+        <p>两个月前，村里来了人，到家里询问赵英梅关于村里一户贫困户的家庭情况。赵英梅配合着完成了调查，跟来访的人讲述那户人家确实是老人自己胳膊断了，女儿的腿又有残疾，没法生活。说到这里，赵英梅给那人递了杯茶，开始介绍自己家的状况。
+            <br>
+            <img src="img/chat.png" style="width: 100%;margin-top: 30px;">
+        <p>赵英梅被呛了回去，半晌没有说话。
+        <p>53岁的村民老陈已经在家待业两三年了，如今，他不再对外出打工做什么指望。
+        <p>十几年的高血压使得老陈的左右脑已经出现了脑梗的前兆，左脑堵塞了5%，右脑已经堵塞了60%。
+        <p>今年6月下旬，在家休息的老陈突然觉得半边身体麻了，不能动弹。于是紧急前往了中心医院住院检查，幸而就医及时，没有造成严重后果。
+
+    </div>
+
+    <div class="chatu">
+        <div class="part3chatu">
+            <img src="img/gaoxueya.png" alt="">
+        </div>
+        <div>
+            <p class="data" style="padding-right: 20px;font-size: 22px;">“我现在哦，出去干活别人都不要，怕我突然脑梗了。”
+                <br>
+                <br>
+            <p class="data" style="padding-right: 20px;font-size: 22px;">“收入？哪里有收入哦！现在都靠孩子养，不然吃饭都吃不起咯！”
+        </div>
+    </div>
+
+    <div class="zhengwen">
+        <br>
+        <p>慢性病<span style="color: #F1962E;">对于我国劳动力的影响</span>是巨大的，尤其是对中老年群体而言。
+        <p>研究统计，与未患病老人相比，低龄、中高龄老人，男性、女性老人患者的劳动参与概率都有不同程度的降低。
+        <div>
+            <iframe src="https://dycharts.com/xshow/index.html?id=c_5caced59d63ddcc65bf6131903167513" width="800"
+                height="500" scrolling="no" frameborder="0" align="" style="display: block;margin: 10px auto;"></iframe>
+        </div>
+        <p>失去劳动力，没有收入，当吃饭都成为一种难题，治病便更成为一种奢望。
+            <br>
+    </div>
+
+    <div id="page4"></div>
+    <div class="zhengwen">
+        <p>提到农村老年人的医疗负担，医疗保险是无法绕开的话题。医保的报销政策和使用情况直接决定了患者在治疗上的支出。<span
+                style="color: #F1962E;">然而政策信息在基层的传播不到位，以及部分村民对政策内容的认识不足、对医疗补助或报销的流程缺乏了解</span>，导致一些老年患者没有及时享受相应的政策照顾。
+        <p>前程村<span class="data">95%</span>的居民都购买了城乡居民基本医疗保险，但对其的评价却褒贬不一。
+    </div>
+
+    <div id="danmudiv">
+        <marquee behavior="scroll" direction="left" scrollamount="15">
+            <div id="danmu">
+                <div style="color: #F1962E;font-size: 26px;">住院报销还可以，住院费没花多少</div>
+                <div style="font-size: 20px;">有这种好事也轮不到我</div>
+                <div style="font-size: 22px;">现在就有大病兜底啊</div>
+                <div>报了，只出了几百，不然要出几千</div>
+                <div style="color: #F1962E;font-size: 22px;font-weight: bolder;">挺满意的</div>
+                <div style="font-size: 27px;">去医院也没什么意义，还是去药店，自己买点药简单些</div>
+                <div>农村里不得大病不会去医院</div>
+                <div style="color: #F1962E;font-size: 22px;font-weight: bolder;">我刚刚去签约了家庭医生</div>
+            </div>
+
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="12">
+            <div id="danmu">
+                <div style="color: #FFF7D6;font-size: 22px;">实在负担不了</div>
+                <div style="color: #FFF7D6;font-size: 29px;font-weight: bolder;">我知道，书记专门来家里介绍了</div>
+                <div>她说报不了，没有报销的余地</div>
+                <div style="font-size: 17px; color:#F1962E;">我们满不满意的也无所谓，没人管</div>
+                <div style="color: #FFF7D6;font-size: 21px;">没谁管这事，管了也没用</div>
+                <div>农民没有收入，实在看不起</div>
+                <div style="color: #F1962E;font-size: 26px;">大队里组织体检，我前几天才去了</div>
+                <div style="color: #FFF7D6;font-size: 24px;">我们家还贴了政策宣传卡</div>
+            </div>
+
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="13">
+            <div id="danmu">
+                <div style="color: #FFF7D6;font-size: 18px;">一个体检都一千多，看不起</div>
+                <div>太贵了</div>
+                <div style="color: #F1962E;font-size: 21px;">报不了，住院才能报</div>
+                <div style="font-size: 16px; font-weight: bolder;">挺好的啊，村医有时候还打电话来问嘞</div>
+                <div>感觉蛮麻烦，医生也没说怎么弄</div>
+                <div style="color: #F1962E;font-size: 17px;font-weight: bold;">什么政策？我搞不清楚</div>
+                <div style="font-size: 20px;font-weight: bold;">之前医生让我们签了政策明白卡</div>
+            </div>
+        </marquee>
+
+    </div>
+
+    <div class="zhengwen">
+        <br>
+        <p>自从38岁查出高血压，刘林军已经受慢性病困扰20年了。
+
+        <p>今年5月，老刘在工地上摔了一跤，进了医院，七七八八的检查接踵而至，验血、CT影像、核磁共振等等等等，这一检查，顺带查出胆囊有些问题，医生要求老刘先住院观察一段时间。
+        <p>加上检查和手术，老刘前前后后花了3万多，化验费都花了2000多，期间他在医院苦苦等待着他的各类检查结果。
+
+        <p>检查结果出来后，护士来通知说没什么事，可以收拾收拾出院了，顺手拔掉了老刘手上正打着的点滴。
+        <p>这次经历，导致老刘对医院非常失望。
+        <p>“医院就是骗鬼的，就是图几个钱！”
+            <br>
+            <br>
+        <p>相比其老刘的愤怒和不满，许贵华对于医院和医保的态度，则表现得平和多了。
+        <p>许贵华，1955年生人，2014年被诊断出心肌梗塞，于是在武汉同济医院做了心脏搭桥手术，总共花了大概8万块。当时报销还比较麻烦，跑到卫生局开了证明，最后<span
+                style="color: #F1962E;">报销了30%费用</span>。
+        <p>除了心脏病，胆结石、糖尿病等现象也纠缠和困扰了他多年，按他自己的话说，每年，他都是医院住院的常客。但是提及花费，许贵华强调自己并没有花多少钱，绝大部分住院费用都经医保报销了，自己每次也就花了几百块钱。
+        <p>比起住院，倒是每年花在买药上的费用要两千多块。不过许贵华表示理解，“我这浑身是病，买药是要花些钱的，不过总体而言，这几年在医疗上我没花太多钱。<span
+                style="color: #F1962E;">国家搞大病兜底确实是兜了</span>。”
+
+            <br>
+        <p>走访发现，在前程村接受采访的<span class="data" style="font-size: 20px;">40位</span>患者中，有<span class="data"
+                style="font-size: 20px;">15名</span>表示自己从未使用过医疗保险进行报销，看病全部是自掏腰包。剩下的25名受访者中，也有<span class="data"
+                style="font-size: 20px;">11位</span>表示，报销金额很少，没起到什么作用。
+
+        <div>
+            <iframe src="https://dycharts.com/xshow/index.html?id=c_d10d08f3cc031e787a2b416b005b7ad6" width="650"
+                height="450" scrolling="no" frameborder="0" align="" style="display: block;margin: 10px auto;"></iframe>
+        </div>
+
+
+        <br>
+        <p>事实上，这些40/50/60年代的农村老人们，大多只有小学的文化水平，<span style="color: #F1962E;">严重缺乏信息的主动获取能力</span>，对医保政策的了解主要依托于村干部和村医的讲解。
+        <p>中老年人群体中，小学及以下学历约占65.6%，患慢性病率的比例约为81.4%；整体呈现出学历越低，患病率越高的趋势。</p>
+        <br>
+        <div>
+            <iframe src="https://dycharts.com/xshow/index.html?id=c_2d781440391b4854e49af106dff637b2" width="800"
+                height="500" scrolling="no" frameborder="0" align="" style="display: block;margin: 10px auto;"></iframe>
+        </div>
+        <br>
+        <p>或许是因为未能找到合适高效的宣传方式，或许是因为基层工作人员对相关政策也没理解清楚，城乡居民基本医保的基层政策宣传方面也客观存在着一些问题。关于这些问题，我们也邀请到<span
+                style="color: #F1962E;">武汉大学公共事业管理系的姚强副教授</span>为我们做出专业解释。
+        </p>
+        <h5 class="zhushi_card">鼠标悬停查看专家解释 ↓</h5>
+    </div>
+    <div class="card">
+        <div class="item">
+            <div class="img">
+                <h3>问题1</h3>
+                <h4>忽视关于基层首诊制度的宣传。</h4>
+                <br>
+                <p>走访发现，有不少患者反映，自己很少与村卫生院打交道，有突发情况一般直接前往县中心医院或是市里的大医院。
+            </div>
+            <div class="caption">
+                <h3>专家有话说</h3>
+                <p>“我国城乡医保实行了<span
+                        class="highlight">基层首诊制度</span>，也就是普通门诊就医需先到基层医院（如村卫生院、社区卫生服务中心）进行首诊，需要到其他二三级医院就医的，需要基层定点医疗机构开具首诊转诊单。未经基层定点医疗机构首诊转诊而直接到二三级医院门诊就诊的（急诊除外）医疗报销待遇会降低甚至取消。”
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img">
+                <h3>问题2</h3>
+                <h4>基层医保政策宣传时只笼统声称可以报销，未强调关于报销待遇的几个关键因素。</h4><br>
+                <p>在医保的实际使用过程中，<span class="highlight">病种类别、医疗机构级别、就诊医院是否为定点医疗机构、药品耗材是否进保</span>，都直接影响了医疗报销的待遇。
+            </div>
+            <div class="caption">
+                <h3>专家有话说</h3>
+                <p>“根据医保政策，经定点医疗机构确诊为慢特病的患者，可享受更好的报销待遇；不同等级医院的报销比例也不相同；同时，医疗耗材不在医保目录内，也将提高患者自付医疗费用的比例。我的建议是可以<span
+                        class="highlight">将这些关键条件列成表格，印成小册子发放</span>，强调这些因素对于医保待遇的影响，帮助患者更清晰理解政策，从而减少误会和心理落差。” </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img">
+                <h3>问题3</h3>
+                <h4>基层医保政策宣传时未讲解清医疗报销待遇在门诊与住院上的区别。</h4><br>
+                <p>走访发现，由于缺乏对政策的了解，部分患者存在就诊完进行结算时惊讶发现门诊费用无法报销的情况，因此对医保政策十分失望。事实上，我国医保在<span
+                        class="highlight">门诊与住院的待遇上，本身就有明显区别</span>。
+            </div>
+            <div class="caption">
+                <h3>专家有话说</h3>
+                <p>“为保障大病兜底，我国肯定首先倾向于将有限的医疗保障基金，首先投入到住院患者这部分病情更严重、医疗花销更大的人身上，<span
+                        class="highlight">因此住院的报销待遇要明显优于门诊</span>。至于门诊无法报销的情况，是因为门诊存在报销区间，在区间内的费用才可以报销，且门诊单笔报销和年度报销总额都是非常有限的。”
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="zhengwen">
+        <p>在一些地区，由于缺乏关于基层医疗制度的及时更新和关键因素的强调，导致村民在医疗报销上走了远路，绕了弯子，未切实享受到医保优惠。
+
+        <p>医保的基层政策宣传内容与居民使用中的实际情况间，存在着一定出入，这种出入直接导致了患者对政策概念不清、理解偏差，影响了居民对于国家政策的满意度、对基层政府和村级单位的信任程度。该现象反映了<span
+                style="color: #F1962E;">基层政策宣传的漏洞</span>，揭示出<span style="color: #F1962E;">基层信息流通不畅</span>的客观问题。
+    </div>
+
+
+    <div id="page5"></div>
+    <div class="zhengwen">
+        <p>对于老年慢性病，我国一直都有密切关注并开展防治工作。2017年，国务院印发了《中国防治慢性病的中长期规划（2017—2025年）》，推动全面健康建设，强调统筹协调、共建共享、预防为主、分类指导，随后相继出台了一系列改革和新政策，旨在切实改善我国健康环境，推进健康中国建设。
+        </p>
+    </div>
+
+    <!-- <div class="image-container">
+        <img src="img/time-line.jpg" alt="Long Image">
+    </div>
+
+    <div class="nav-buttons">
+        <img class="prev" src="img/btn-prev - 副本.png" >
+        <img class="next" src="img/btn-next - 副本.png" >
+    </div> -->
+
+    <h5 class="zhushi" style="color: white;">左右点击查看慢性病防止政策变化 ↓</h5>
+    <iframe src="iframe/shuiping.html" width="100%" height="750px" scrolling="no" frameborder="0" align=""
+        style="display: block"></iframe>
+
+    <div class="zhengwen">
+        <div style="display: flex;align-items: center;">
+            <div style="width: 48%;">
+                <p>经过我国各级医疗卫生单位的共同努力，我国慢性病防治工作已经取得了阶段性成果。
+                <p>统计数据显示，我国重大慢性病过早死亡率从2015年的<span class="data">18.5%</span>下降至2021年的<span
+                        class="data">15.3%</span>，下降超3个百分点，降幅达<span class="data">17.3%</span>，年均降幅接近全球平均降幅的<span
+                        class="data">3倍</span>。</p>
+            </div>
+            <iframe src="https://dycharts.com/xshow/index.html?id=c_e1499d31b88db0b6c782b01b332b75f3" width="450"
+                height="500" scrolling="no" frameborder="0" align="" style="display: block;"></iframe>
+        </div>
+    </div>
+    <div class="zhengwen">
+        <p>然而不可否认的是，目前我国慢性病患者基数仍在不断扩大，防控形势依旧严峻，慢性病的防治与患者的医疗保障建设仍是国家健康工作的关键一环。</p>
+    </div>
+    <div id="people">
+        <div class="people1">
+            <img class="people" src="img/people1.png">
+        </div>
+        <div class="people2">
+            <img class="people" src="img/people2.png">
+        </div>
+        <div class="people3">
+            <img class="people" src="img/people3.png">
+        </div>
+        <div class="people4">
+            <img class="people" src="img/people4.png">
+        </div>
+        <div class="people5">
+            <img class="people" src="img/people5.png">
+        </div>
+    </div>
+    <div class="end">
+        <br>
+        <br>
+        <br>
+        <br>
+        <b>
+            <p>赵英梅的背后，还有千千万万个他，她，他们
+        </b>
+        <b>
+            <p>在快节奏的生活中被慢性病苦苦纠缠
+        </b>
+        <b>
+            <p>也曾亦步亦趋跟上时代的脚步
+        </b>
+        <b>
+            <p>却被信息高高筑起的门槛所阻拦
+        </b>
+        <br>
+        <b>
+            <p>所以，他们只能期盼</p>
+        </b>
+        <b>
+            <p style="font-size: 22px;">医疗水平的发展让他们不用再因疼痛而辗转难眠、苦等天明
+        </b>
+        <b>
+            <p style="font-size: 22px;">医疗保障的升级让他们不用再因节省一粒药而在生命线的边缘反复试探
+        </b>
+        <b>
+            <p>同时，他们也期盼着
+        </b>
+        <b>
+            <p>更多的人不再踏入慢性病的漩涡
+        </b>
+        <b>
+            <p style="font-size: 22px;">在世界的每一个角落，健康享受当下，生命翩然起舞
+        </b>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">
+        <br>
+        <hr>
+
+        <p>为保护受访者隐私，本作品所用患者人名均为化名
+            <br>
+            <br>
+        <h4 style="color: #A1B3BC;">制作团队</h4>
+        <p>采访：尹雨佳 马冀颖
+        <p>数据搜集：尹雨佳 马冀颖 林欣铭
+        <p>文稿撰写：尹雨佳
+        <p>数据可视化及网页制作：林欣铭
+        <p>插图绘制：高智琪
+        <p>指导老师：周呈思 王琼</p>
+        <p>特别鸣谢：姚强老师 田文超先生 黄柯霏
+        <p>联系方式：2021301152047@whu.edu.cn</p>
+        <br>
+        <br>
+        <h4 style="color: #A1B3BC;">数据来源：</h4>
+        <p>[1] 《当阳市河溶镇前程村村民健康档案册》
+        <p>[2] 中国慢性病及危险因素监测报告2018
+        <p>[3] 王浩,张琳,方晓雅等.中国中老年人慢性病共病现状及其空间分布研究[J].中国全科医学,2022,25(10):1186-1190+1196.
+        <p>[4] 《中国居民营养与慢性病状况报告（2020年）》
+        <p>[5] 宜昌市社会治理一体化平台
+        <p>[6] 彭现美,杨甜甜.慢性病对老年劳动参与的影响研究[J].湖北经济学院学报(人文社会科学版),2021,18(06):69-73.
+        <p>[7] 国家卫健委"党的十八大以来重大疾病防控工作进展与成效"主题新闻发布会实录
+            <br>
+            <br>
+        <h4 style="color: #A1B3BC;">参考资料：</h4>
+        <p>[1] 张梅, 吴静, 张笑, 等 . 2018年中国成年居民高血压患病与控制状况研究[J]. 中华流行病学杂 志, 2021, 42(10): 1780-1789.
+            DOI:10.3760/cma.j.cn112338-20210508-00379.
+        <p>[2] 2020中国卫生健康统计年鉴
+        <p>[3] 当阳市巩固拓展脱贫攻坚成果有效衔接乡村振兴医疗保障政策宣传册
+        <p>[4] 2023年卫健健康帮扶政策宣传
+        <p>[5]《 2023年世界卫生统计——监测健康状况以实现可持续发展目标》
+        <p>[6]中国居民营养与慢性病状况报告（2020年）[J].营养学报,2020,42(06):521.
+        <p>[7]徐小兵,李迪,孙扬等.中国城乡老年人慢性病共病及其影响因素的差异性研究[J].中国慢性病预防与控制,2023,31(06):427-432.DOI:10.16386/j.cjpccd.issn.1004-6194.2023.06.006.
+            <br>
+            <br>
+        <div class="copyright">
+            <p>2023 &copy; 武汉大学 新闻与传播学院</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="css&js/index.js"></script>
+<script>
+    $('.fuxian').smoove({
+        offset: '20%'
+    });
+
+</script>
+<script>
+    var cur = 0;
+    var img_cunmao = [
+        "img/1.jpg",
+        "img/2.jpg",
+        "img/3.jpg",
+        "img/4.jpg",
+        "img/5.jpg",
+        "img/6.jpg"];
+    function chgImgLeft() {
+        cur--;
+        if (cur < 0) {
+            cur = img_cunmao.length - 1;
+        }
+        setImg(img_cunmao[cur]);
+    }
+    function chgImgRight() {
+        cur++;
+        if (cur >= img_cunmao.length) {
+            cur = 0;
+        }
+        setImg(img_cunmao[cur]);
+    }
+    function setImg(imgname) {
+        img = document.getElementById("cunmao_img");
+        img.src = img_cunmao[cur];
+        console.info(imgname);
+    }
+</script>
+<!-- <script src="css&js/timeline.js"></script> -->
+</head>

@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "zhenkai";
+    font-display: auto;
+    src: url("../font/LXGWZhenKai.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    /* background: url("../img/bg-all.png");
+    background-size: 100% auto;
+    background-repeat: repeat-y; */
+    background: #2b5466;
+    overflow-x: hidden;
+}
+
+/* 侧边栏 */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    /* background: url("../img/bg-slidenav.jpg"); */
+    background: rgba(255,255,255,0);
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.sidenav a:hover {
+    color: #BB5B3F;
+    font-weight:600;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#bingli {
+    width: 80px;
+    position: fixed !important;
+    top: 10px;
+    left: 10px;
+    z-index: 9;
+}
+
+#bingli:hover {
+    transform: translate(10px, 0px);
+    transform: scale(1.2);
+}
+
+
+/* 单页视差 */
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    transition: top 1s ease-in-out;
+}
+
+
+.section1 {
+    background-image: url("../img/title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 6;
+    position: absolute;
+}
+
+.section2 {
+    background: #2b5466;
+    z-index: 5;
+    position: absolute;
+}
+
+.section3 {
+    background: url('../img/part1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 4;
+    position: absolute;
+}
+
+.section4 {
+    background: #2b5466;
+    z-index: 3;
+    position: absolute;
+}
+
+.section5 {
+    background: #2b5466;
+    z-index: 2;
+    position: absolute;
+}
+.section6 {
+    background: #2b5466;
+    z-index: 1;
+    position: absolute;
+}
+
+.article {
+    width: 60%;
+    margin: 0 auto;
+}
+.wenzi p{
+    line-height: 2em;
+    margin-top: 30px;
+}
+
+p {
+    font-family: "微软雅黑";
+    line-height: 2em;
+    /* text-indent: 2em; */
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.title-article {
+    display: flex;
+
+}
+
+.chatu1 {
+    width: 400px;
+    margin-right: 10px;
+}
+
+.book-article p {
+    color: #2b5466;
+}
+
+.book-article {
+    width: 80%;
+    margin: 60px auto;
+
+}
+
+.shuiyin {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.shuiyin img {
+    width: 100%;
+    height: 100%;
+}
+.num{
+    font-size: 22px;
+    font-weight: bolder;
+    color:#AF5F3C;
+}
+.tubiao{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.book-article4{
+    margin: 150px auto;
+}
+.guodu p{
+    text-indent: none;
+    text-align: center;
+}
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/part2.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.zhengwen{
+    width: 60%;
+    margin: 50px auto;
+}
+.zhengwen p{
+    margin: 30px;
+}
+.part2chatu{
+    width:  450px;
+}
+.part2chatu img{
+    width: 100%;
+    height: 100%;
+}
+.part3chatu{
+    width:  650px;
+}
+.part3chatu img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.chatu{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+.chatu p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/part3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page4 {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/part4.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page5 {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/part5.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.data{
+    color: #F1962E;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+#danmu {
+    display: flex;
+    color: white;
+}
+
+#danmu div {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#danmudiv {
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+
+.card{
+    /* 最大宽度: 100%窗口宽度 */
+    /* max-width: 100vw; */
+    /* 弹性布局 水平排列 允许换行 */
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 80%;
+    /* flex-wrap: wrap; */
+}
+.item{
+    /* 相对定位 */
+    position: relative;
+    width: 310px;
+    color: #fff;
+    height: 480px;
+    margin: 15px;
+    /* 视距 */
+    perspective: 600px;
+}
+.img{
+    width: 310px;
+    height: 480px;
+    /* 绝对定位 */
+    position: absolute;
+    /* 设置旋转的基点为右边 */
+    transform-origin: right;
+    /* 图片默认沿Y轴旋转0度,不透明度为1 */
+    transform: rotateY(0deg);
+    opacity: 1;
+    /* 设置过渡 */
+    transition: 0.5s;
+    z-index: 1;
+    background-color: #5E8699;
+    padding: 0 20px;
+    /* 元素的宽度和高度包含内边距和边框 */
+    box-sizing: border-box;
+    /* 字间距 */
+    letter-spacing: 2px;
+    /* 弹性布局 垂直排列 垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:15px;
+}
+.caption{
+    position: absolute;
+    
+    border-radius:15px;
+    z-index: 0;
+    background-color: #5E8699;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    /* 元素的宽度和高度包含内边距和边框 */
+    box-sizing: border-box;
+    /* 字间距 */
+    letter-spacing: 2px;
+    /* 弹性布局 垂直排列 垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 设置旋转的基点为左边 */
+    transform-origin: left;
+    /* 文字默认沿Y轴旋转90度,不透明度为0 */
+    transform: rotateY(90deg);
+    opacity: 0;
+    /* 过渡 */
+    transition: 0.5s;
+}
+.item:hover .img{
+    /* 悬停时图片消失 */
+    transform: rotateY(-90deg);
+    opacity: 0;
+}
+.item:hover .caption{
+    /* 悬停时文字显示 */
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.item h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.caption h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.item p{
+    font-size: 16px;
+}
+.caption p{
+    font-size: 16px;
+}
+.highlight{
+    font-weight: bolder;
+    color: #F1962E;
+}
+.end{
+    background: url(../img/photowall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    vertical-align: middle;
+}
+.end p{
+    font-family: "宋体";
+    text-align: center;
+    line-height: 3em;
+}
+hr{
+    color: #A1B3BC;
+    width: 55%;
+}
+.footer{
+    width: 60%;
+    margin:0 auto;
+}
+.footer p{
+    color: #A1B3BC;
+    font-size: 15px;
+}
+.people {
+    width: 300px;
+    height: 300px;
+}
+
+#people {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.people1 {
+    top: 80px;
+    left: 0px;
+    position: absolute;
+}
+
+.people2 {
+    top: 220px;
+    left: 250px;
+    position: absolute;
+}
+
+.people3 {
+    top: 10px;
+    left: 500px;
+    position: absolute;
+}
+
+.people4 {
+    top: 310px;
+    left: 720px;
+    position: absolute;
+}
+
+.people5 {
+    top: 150px;
+    left: 900px;
+    position: absolute;
+}
+/* .image-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.image-container img {
+    width: 4000px;
+    height: auto;
+}
+
+.nav-buttons {
+    width: 10%;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+} */
+#cunmao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.cunmaobtn{
+    margin: 50px;
+}
+.cunmao_imgdiv{
+    width: 70%;
+    height: 380px;
+}
+#cunmao_img{
+    width: 100%;
+    height: 100%;
+}
+.zhushi{
+text-align: center;
+font-weight: normal;
+font-size: 16px;
+font-family: "微软雅黑";
+}
+.zhushi_card{
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    }
+.copyright p{
+    text-align: center;
+    color: #A1B3BC;
+    font-size: 15px;
+}
