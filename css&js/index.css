@@ -35,7 +35,7 @@ body {
     top: 0;
     left: 0;
     /* background: url("../img/bg-slidenav.jpg"); */
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
     background-size: 100% auto;
     background-repeat: repeat-y;
     overflow-x: hidden;
@@ -57,7 +57,7 @@ body {
 
 .sidenav a:hover {
     color: #BB5B3F;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .sidenav .closebtn {
@@ -148,6 +148,7 @@ body {
     z-index: 2;
     position: absolute;
 }
+
 .section6 {
     background: #2b5466;
     z-index: 1;
@@ -158,7 +159,8 @@ body {
     width: 60%;
     margin: 0 auto;
 }
-.wenzi p{
+
+.wenzi p {
     line-height: 2em;
     margin-top: 30px;
 }
@@ -201,22 +203,27 @@ p {
     width: 100%;
     height: 100%;
 }
-.num{
+
+.num {
     font-size: 22px;
     font-weight: bolder;
-    color:#AF5F3C;
+    color: #AF5F3C;
 }
-.tubiao{
+
+.tubiao {
     margin-top: 30px;
     margin-left: 30px;
 }
-.book-article4{
+
+.book-article4 {
     margin: 150px auto;
 }
-.guodu p{
+
+.guodu p {
     text-indent: none;
     text-align: center;
 }
+
 #page2 {
     height: 100vh;
     width: 100%;
@@ -227,36 +234,42 @@ p {
     background-size: cover;
 }
 
-.zhengwen{
+.zhengwen {
     width: 60%;
     margin: 50px auto;
 }
-.zhengwen p{
+
+.zhengwen p {
     margin: 30px;
 }
-.part2chatu{
-    width:  450px;
+
+.part2chatu {
+    width: 450px;
 }
-.part2chatu img{
+
+.part2chatu img {
     width: 100%;
     height: 100%;
 }
-.part3chatu{
-    width:  650px;
+
+.part3chatu {
+    width: 650px;
 }
-.part3chatu img{
+
+.part3chatu img {
     width: 100%;
     height: 100%;
 }
 
 
-.chatu{
+.chatu {
     display: flex;
     width: 60%;
     margin: 0 auto;
     align-items: center;
 }
-.chatu p{
+
+.chatu p {
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -270,6 +283,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #page4 {
     height: 100vh;
     width: 100%;
@@ -279,6 +293,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #page5 {
     height: 100vh;
     width: 100%;
@@ -288,7 +303,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.data{
+
+.data {
     color: #F1962E;
     font-size: 22px;
     font-weight: bolder;
@@ -313,7 +329,7 @@ p {
 
 
 
-.card{
+.card {
     /* 最大宽度: 100%窗口宽度 */
     /* max-width: 100vw; */
     /* 弹性布局 水平排列 允许换行 */
@@ -323,7 +339,8 @@ p {
     width: 80%;
     /* flex-wrap: wrap; */
 }
-.item{
+
+.item {
     /* 相对定位 */
     position: relative;
     width: 310px;
@@ -333,7 +350,8 @@ p {
     /* 视距 */
     perspective: 600px;
 }
-.img{
+
+.img {
     width: 310px;
     height: 480px;
     /* 绝对定位 */
@@ -356,12 +374,13 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius:15px;
+    border-radius: 15px;
 }
-.caption{
+
+.caption {
     position: absolute;
-    
-    border-radius:15px;
+
+    border-radius: 15px;
     z-index: 0;
     background-color: #5E8699;
     color: #fff;
@@ -384,58 +403,71 @@ p {
     /* 过渡 */
     transition: 0.5s;
 }
-.item:hover .img{
+
+.item:hover .img {
     /* 悬停时图片消失 */
     transform: rotateY(-90deg);
     opacity: 0;
 }
-.item:hover .caption{
+
+.item:hover .caption {
     /* 悬停时文字显示 */
     transform: rotateY(0deg);
     opacity: 1;
 }
-.item h3{
+
+.item h3 {
     font-size: 22px;
     margin-bottom: 15px;
 }
-.caption h3{
+
+.caption h3 {
     font-size: 22px;
     margin-bottom: 15px;
 }
-.item p{
+
+.item p {
     font-size: 16px;
 }
-.caption p{
+
+.caption p {
     font-size: 16px;
 }
-.highlight{
+
+.highlight {
     font-weight: bolder;
     color: #F1962E;
 }
-.end{
+
+.end {
     background: url(../img/photowall.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     vertical-align: middle;
 }
-.end p{
+
+.end p {
     font-family: "宋体";
     text-align: center;
     line-height: 3em;
 }
-hr{
+
+hr {
     color: #A1B3BC;
     width: 55%;
 }
-.footer{
+
+.footer {
     width: 60%;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.footer p{
+
+.footer p {
     color: #A1B3BC;
     font-size: 15px;
 }
+
 .people {
     width: 300px;
     height: 300px;
@@ -470,7 +502,7 @@ hr{
 
 .people4 {
     top: 310px;
-    left: 600px;
+    left: 640px;
     position: absolute;
 }
 
@@ -479,6 +511,7 @@ hr{
     left: 800px;
     position: absolute;
 }
+
 /* .image-container {
     overflow: hidden;
     width: 100%;
@@ -502,37 +535,43 @@ button {
     font-size: 24px;
     padding: 10px 20px;
 } */
-#cunmao{
+#cunmao {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
 }
-.cunmaobtn{
+
+.cunmaobtn {
     margin: 50px;
 }
-.cunmao_imgdiv{
+
+.cunmao_imgdiv {
     width: 70%;
     height: 380px;
 }
-#cunmao_img{
+
+#cunmao_img {
     width: 100%;
     height: 100%;
 }
-.zhushi{
-text-align: center;
-font-weight: normal;
-font-size: 16px;
-font-family: "微软雅黑";
+
+.zhushi {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "微软雅黑";
 }
-.zhushi_card{
+
+.zhushi_card {
     text-align: center;
     font-weight: normal;
     color: white;
     font-size: 16px;
     font-family: "微软雅黑";
-    }
-.copyright p{
+}
+
+.copyright p {
     text-align: center;
     color: #A1B3BC;
     font-size: 15px;
