@@ -445,6 +445,7 @@ hr{
     position: relative;
     width: 100vw;
     height: 100vh;
+    display: flex;
     margin-right: 10%;
     margin-left: 10%;
 }
@@ -457,25 +458,25 @@ hr{
 
 .people2 {
     top: 220px;
-    left: 250px;
+    left: 200px;
     position: absolute;
 }
 
 .people3 {
     top: 10px;
-    left: 500px;
+    left: 400px;
     position: absolute;
 }
 
 .people4 {
     top: 310px;
-    left: 720px;
+    left: 600px;
     position: absolute;
 }
 
 .people5 {
     top: 150px;
-    left: 900px;
+    left: 800px;
     position: absolute;
 }
 /* .image-container {
